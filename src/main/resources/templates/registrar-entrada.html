@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Login</title>
+
+  <style>
+    * {
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+    }
+
+    body {
+        font-family: Arial, sans-serif;
+        background-color: #f2f2f2;
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        min-height: 100vh;
+    }
+
+    .login-container {
+        background-color: white;
+        padding: 30px;
+        width: 350px;
+
+        border-radius: 10px;
+        box-shadow: 0 4px 15px rgba(0, 0, 0, 0.15);
+
+        text-align: center;
+    }
+
+    h2 {
+        margin-bottom: 25px;
+        color: #333;
+    }
+
+    form {
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    input {
+        padding: 12px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        font-size: 14px;
+    }
+
+    input:focus {
+        outline: none;
+        border-color: #007bff;
+    }
+
+    button {
+        padding: 12px;
+        border: none;
+        border-radius: 5px;
+
+        background-color: #007bff;
+        color: white;
+
+        font-size: 15px;
+        cursor: pointer;
+    }
+
+    button:hover {
+        background-color: #0056b3;
+    }
+
+    h3 {
+        margin-top: 25px;
+        margin-bottom: 10px;
+        font-size: 14px;
+        color: #555;
+    }
+
+    a {
+        color: #007bff;
+        text-decoration: none;
+    }
+
+    a:hover {
+        text-decoration: underline;
+    }
+  </style>
+</head>
+
+<body>
+
+<div class="login-container">
+
+  <h2>Tela de login</h2>
+
+  <form method="post" action="/veiculo/cadastrar">
+
+    <input type="text" id="placa" name="placa" placeholder="Digite sua placa" required>
+    <input type="text" id="modelo" name="modelo" placeholder="Digite seu modelo" required>
+    <input type="text" id="cor" name="cor" placeholder="Digite a cor do seu carro" required>
+    <input type="text" id="observacao" name="observacao" placeholder="Digite uma observação">
+
+    <button type="submit">Enviar</button>
+
+  </form>
+
+</div>
+
+</body>
+</html>
