@@ -1,6 +1,6 @@
 FROM eclipse-temurin:25-jdk AS build
 
-WORKDIR /app
+WORKDIR /a
 
 # Copia todos os ficheiros do projeto para o contentor
 COPY . .
