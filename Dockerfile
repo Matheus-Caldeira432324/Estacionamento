@@ -5,6 +5,10 @@ WORKDIR /a
 # Copia todos os ficheiros do projeto para o contentor
 COPY . .
 
+# Executa a limpeza e compilação do projeto com o Maven Wrapper (mvnw)
+RUN chmod +x mvnw
+RUN ./mvnw clean package -DskipTests
+
 FROM eclipse-temurin:25-jre
 
 WORKDIR /app
